@@ -1,0 +1,68 @@
+/* Estilos do index.html*/ 
+.center{
+  text-align: center;
+  color: rgb(109, 4, 209);
+}
+.container{
+  display: flex;
+  flex: row;
+  justify-content: center ;
+  align-items: center;
+}
+.mb-50{
+  margin-bottom: 50px;
+}
+#menu li{
+  display: inline;
+  padding: 15px;
+}
+#menu li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+#menu li a:hover{
+ color: rgb(142, 74, 210);
+}
+.text{
+  text-align: center;
+  color: black;
+}
+.br-50{
+  border-radius: 50%;
+}
+.wh{
+  width: 500px;
+ height: 500px;
+}
+.biblia{
+  width: 500px;
+ height: 500px;
+ align-items: center;
+ justify-content: center ;
+}
+.tm-social{
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+
+
+
+/* Estilos do contato.html*/ 
+.contato{
+  text-align: center;
+  
+}
+.msg{
+  color: black;
+}
+
+.ml-50{
+  margin-left: 50px;
+}
+.botao{
+  width: 120px;
+  height: 40px;
+}
