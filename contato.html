@@ -17,64 +17,81 @@
       </li>
     </ul>
 
-    <h1 class="contato">Entre em contato comigo:</h1>
-    <div class="container">
+    <h1 class="center">Entre em contato comigo:</h1>
+
+    <div class="container mb-50">
       <div>
         <h2>Mande uma mensagem:</h2>
-        <form >
-          <label for="nome">Nome:</label><br />
-          <input type="text" id="nome" />
+        <form>
+          <label for="nome">Nome:</label> <br />
+          <input type="text" id="nome" onkeyup="validaNome()" />
+          <div id="txtNome"></div>
           <br />
+          <label for="email">E-mail:</label> <br />
+          <input type="email" id="email" onkeyup="validaEmail()" />
+          <div id="txtEmail"></div>
           <br />
-          <label for="email">E-mail:</label><br />
-          <input type="email" id="email" />
-          <br />
-          <br />
-          <label for="comentario">Comentario:</label><br />
+          <label for="comentario">Comentario:</label> <br />
           <textarea
             name="comentario"
             id="comentario"
-            cols="50"
+            cols="40"
             rows="10"
-          ></textarea
-          >/>
-          <br>
-          <br>
+            onkeyup="validaComentario()"
+          ></textarea>
+          <div id="txtComentario"></div>
+          <br />
+
           <button class="botao">Enviar</button>
         </form>
-    </div>
-    <div class="ml-50">
-      <h2>Endereço:</h2>
-      <p >Praça Dr. Sampaio Vidal - Vila Formosa</p>
-      <p>São Paulo - SP</p>
+      </div>
+      <div class="ml-50">
+        <h2>Endereço:</h2>
+        <p>Praça Dr. Sampaio Vidal - Vila Formosa</p>
+        <p>São Paulo - SP</p>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.01437580163!2d-46.543209585383806!3d-23.567927167719077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5dc41a8d3ac1%3A0xdb47533e1b9777bd!2sPra%C3%A7a%20Dr.%20Sampaio%20Vidal%20-%20Vila%20Formosa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003356-060!5e0!3m2!1spt-BR!2sbr!4v1654606453002!5m2!1spt-BR!2sbr"
-        width="400"
-        height="250"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.01437580163!2d-46.543209585383806!3d-23.567927167719077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5dc41a8d3ac1%3A0xdb47533e1b9777bd!2sPra%C3%A7a%20Dr.%20Sampaio%20Vidal%20-%20Vila%20Formosa%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003356-060!5e0!3m2!1spt-BR!2sbr!4v1654606453002!5m2!1spt-BR!2sbr"
+          width="400"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          onmousemove="mapaZoom()"
+          onmouseout="mapaNormal()"
+          id="mapa"
+        ></iframe>
+      </div>
     </div>
-    <hr>
+    <hr />
     <footer>
       <div class="container">
-        <a href="https://www.instagram.com/">
-       <img class="tm-social" src="assets/img/insta.png" alt="logo do insta">
+        <a href="https://www.instagram.com/thamyvcavalcantii_/">
+          <img
+            class="tm-social"
+            src="assets/img/insta.png"
+            alt="logo do insta"
+          />
         </a>
-        <a href="https://www.linkedin.com/">
-         <img class="tm-social"  src="assets/img/linkedIn.png" alt="logo do LinkedIn">
+        <a href="https://www.linkedin.com/in/thamyrescavalcanti/">
+          <img
+            class="tm-social"
+            src="assets/img/linkedIn.png"
+            alt="logo do LinkedIn"
+          />
         </a>
-        <a href="https://github.com/">
-        <img class="tm-social"  src="assets/img/github.png" alt="logo do github ">
+        <a href="https://github.com/ThamyC1001">
+          <img
+            class="tm-social"
+            src="assets/img/github.png"
+            alt="logo do github "
+          />
         </a>
-     </div> 
-      <p class="center">
-        Todos os direitos reservados: Thamy Cavalcanti &copy
-      </p>
-      </footer>
+      </div>
+      <p class="center">Todos os direitos reservados: Thamy Cavalcanti &copy</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
